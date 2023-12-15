@@ -1,0 +1,196 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  /* background-color: #f1f1f1; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+background: url("../img/bg5.gif") top right no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body::after {
+    display: flex;
+    content: "\00A9  kholis,faiz,bintang,yuli,fitri ";
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 11px;
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    z-index: 5;
+  }
+img{
+ width: auto;
+ height: 200px;
+ position: absolute;
+display: flex;
+justify-content: end;
+flex-direction: column-reverse;
+margin-left: 300px;
+margin-bottom: 360px;
+}
+.aku{
+   width: auto;
+ position: absolute;
+display: flex;
+justify-content: end;
+flex-direction: column-reverse;
+margin-bottom: 250px;
+z-index: 2;
+}
+.gambar2{
+   width: auto;
+ height: 200px;
+ position: absolute;
+display: flex;
+justify-content: end;
+flex-direction: column-reverse;
+margin-right: 500px;
+margin-bottom: 360px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  display: inline-block;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+h1 {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+span {
+  color: #000000;
+}
+.game-container {
+  display: inline-block;
+  width: 800px;
+  padding: 10px;
+  background: transparent;
+  backdrop-filter: blur(3px);
+  border-radius: 10px;
+  box-shadow: 0 0 10px #b6f703;
+  z-index: 2;
+}
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #b6f703;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.mulai {
+  z-index: 2;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #020202;
+  background-color: #f7030b;
+  border-radius: 10px;
+  cursor: pointer;"
+}
+
+.mulai:hover {
+  background-color: #00ff08;
+}
+/* loading css */
+.loading-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: #011015;
+  z-index: 99;
+}
+.container2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  width: 200px;
+  height: 200px;
+  border: 0px solid white;
+  border-radius: 50%;
+  position: absolute;
+}
+.loader:nth-child(2) {
+  border-bottom-width: 8px;
+  border-color: rgb(231, 5, 252);
+  animation: rotate1 2s linear infinite;
+}
+.loader:nth-child() {
+  border-right-width: 8px;
+  border-color: rgb(157, 241, 1);
+  animation: rotate2 2s linear infinite;
+}
+.loader:nth-child(4) {
+  border-top-width: 8px;
+  border-color: rgb(0, 169, 236);
+  animation: rotate3 2s linear infinite;
+}
+.loading3 {
+  color: white;
+}
+@keyframes rotate1 {
+  0% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+  }
+}
+@keyframes rotate2 {
+  0% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+  }
+}
+@keyframes rotate3 {
+  0% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(50deg) rotateY(-10deg) rotateZ(360deg);
+  }
+}
+.copyright {
+  text-decoration: none;
+  position: fixed;
+  bottom: 10px;
+  left: calc(50vw - 85px);
+  width: 170px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  z-index: 99;
+  opacity: 0.4;
+}
+

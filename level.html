@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tebak Kata</title>
+  <link rel="stylesheet" href="./assets/css/style2.css" />
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+  <audio class="bgMusik" autoplay loop>
+    <source src="./assets/musik/mp31.weba" type="audio/webm">
+  </audio>
+  <!-- loading awal-->
+  <div class="loading-container">
+    <div class="container2">
+      <div class="loader"></div>
+      <div class="loader"></div>
+      <div class="loader"></div>
+      <div class="loader"></div>
+      <div class="loader"></div>
+      <span class="loading3"><b>Tebak kata</b></span>
+    </div>
+  </div>
+  <!-- loading akhir -->
+  <div class="game-modal">
+    <div class="content">
+      <img class="img1" src="./assets/img/congrat.gif" />
+      <img class="img2" src="./assets/img/selesai.gif" />
+      <h4 style="color: rgb(252, 248, 248);">Game selesai!Yok coba lagi wkwkwwk</h4>
+      <p style="color: rgb(255, 255, 255);"> <b></b></p>
+      <button class="play-again" style="color: rgb(247, 243, 243);">Bermain lagi</button>
+    </div>
+  </div>
+  <div class="container">
+    <div class="gambar-box">
+      <img class="game-over-image" src="./assets/img/selesai.gif" alt="Game Over Image" />
+      <h1 style="color: rgb(255, 255, 255); margin-top: 20px; z-index: 2;">Tebak Kata</h1>
+    </div>
+    <div class="game-box">
+      <ul class="word-display"></ul>
+      <h4 class="hint-text" style="color: rgb(255, 255, 255);">Pertanyaan: <b></b></h4>
+      <h4 class="tebakan-text" style="color: rgb(253, 250, 250);">Tebakan salah: <b></b></h4>
+      <div class="keyboard"></div>
+    </div>
+  </div>
+  <script src="./assets/js/script2.js"></script>
+  <script src="./assets/js/loading.js"></script>
+</body>
+
+</html>
